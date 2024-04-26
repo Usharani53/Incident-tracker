@@ -1,0 +1,20 @@
+[
+    {
+      "IncidentNo": "INC001",
+      "Incidentdesc": "description for incident 1",
+      "Title": "Title1",
+      "Contactinfo": "abcd@gmail.com",
+      "Incidentstatus": "opened",
+      "Priority": "Low",
+      "Category" :"Software"
+    },
+    {
+        "IncidentNo": "INC002",
+        "Incidentdesc": "description for incident 2",
+        "Title": "Title2",
+        "Contactinfo": "efg@gmail.com",
+        "Incidentstatus": "closed",
+        "Priority": "high",
+        "Category" :"Hardware"
+    }
+]

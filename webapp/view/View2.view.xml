@@ -1,0 +1,146 @@
+<mvc:View
+    xmlns:core="sap.ui.core"
+    controllerName="incidentman.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:html="html://vvv.v3.org/1999/xhtml"
+>
+    <App class="Incidenttracker">
+        <Page
+            id="page"
+            title="Incident creation page"
+        >
+            <content>
+                <f:SimpleForm
+                    maxContainerCols="2"
+                    layout="ResponsiveGridLayout"
+                    title="Incident form"
+                    labelSpanL="2"
+                    labelSpanM="2"
+                    emptySpanL="0"
+                    emptySpanM="0"
+                    columnsL="1"
+                    columnsM="1"
+                    class="myform"
+                    singleContainerFullSize="true"
+                >
+                    <f:content>
+                        <Label text="Incident no" class="mylabel" design="Bold" wrapping="true"/>
+                        <Input
+                            id="incno"
+                            value="{incno}"
+                            type="Number"
+                            required="true"
+                            width="200px"
+                            placeholder="Enter the incident number"
+                            
+                        />
+                        <Label text="Incident description" design="Bold"/>
+                        <Input
+                            required="true"
+                            width="200px"
+                            placeholder="Enter the description"
+                        />
+                        <Label text="Title" design="Bold"/>
+                        <Input
+                            required="true"
+                            width="200px"
+                            placeholder="Enter the title"
+                        />
+                        <Label text="Contact info" design="Bold"/>
+                        <Input
+                            type="Email"
+                            required="true"
+                            width="200px"
+                            placeholder="Enter the email address"
+                        />
+                        <Label text="Incident Status" design="Bold" />
+                        <ComboBox
+                            id="status"
+                            width="200px"
+                            placeholder="select the status"
+                        >
+                            <core:Item
+                                id="assign"
+                                text="Assigned"
+                            />
+                            <core:Item
+                                id="cls"
+                                text="Close"
+                            />
+                            <core:Item
+                                id="ip"
+                                text="In Progress"
+                            />
+                            <core:Item
+                                id="new"
+                                text="New"
+                            />
+                            <core:Item
+                                id="oh"
+                                text="On Hold"
+                            />
+                            <core:Item
+                                id="res"
+                                text="Resolved"
+                            />
+                        </ComboBox>
+                        <Label text="Priority" design="Bold" />
+                        <ComboBox
+                            id="pr"
+                            width="200px"
+                            placeholder="select the priority"
+                        >
+                            <core:Item
+                                id="low"
+                                text="Low"
+                            />
+                            <core:Item
+                                id="high"
+                                text="High"
+                            />
+                            <core:Item
+                                id="medium"
+                                text="Medium"
+                            />
+                        </ComboBox>
+                        <Label text="Category" design="Bold"/>
+                        <ComboBox
+                            id="cat"
+                            width="200px"
+                            placeholder="select the Category"
+                        >
+                            <core:Item
+                                id="sw"
+                                text="Software"
+                            />
+                            <core:Item
+                                id="hw"
+                                text="Hardware"
+                            />
+                        </ComboBox>
+                    </f:content>
+                </f:SimpleForm>
+            </content>
+            <footer>
+                <OverflowToolbar>
+                    <ToolbarSpacer />
+                    <Button
+                        type="Accept"
+                        text="Save"
+                        press="saveDocument"
+                        visible="{viewModel>/editable}"
+                        class="sapUiSmallMarginBottom sapUiSmallMarginEnd"
+                    />
+                    <Button
+                        type="Reject"
+                        text="Cancel"
+                        class="sapUiSmallMarginBottom sapUiSmallMarginEnd"
+                    />
+                </OverflowToolbar>
+            </footer>
+        </Page>
+    </App>
+</mvc:View>

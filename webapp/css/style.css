@@ -1,0 +1,20 @@
+/* Enter your custom styles here */
+.mytable {
+    display: inline-flexbox;
+    background-color: lightblue;
+    border-color: black;
+   
+}
+.myform {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: medium;
+    background: scroll;
+    background-color: cadetblue;
+  }
+  .mybutton{
+    background-color: red ;
+    display: inline-block;
+  }

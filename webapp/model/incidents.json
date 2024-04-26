@@ -1,0 +1,76 @@
+{
+
+"IncidentCollection" :[
+    {
+      "IncidentNo": "INC001",
+      "Incidentdesc": "Unable to access corporate strategy ppt",
+      "Title": "Password Problem",
+      "Contactinfo": "abcd@gmail.com",
+      "Incidentstatus": "New",
+      "Priority": "Medium",
+      "Category" :"Security"
+    },
+    {
+        "IncidentNo": "INC002",
+        "Incidentdesc": "unable to reset password",
+        "Title": "Password Problem",
+        "Contactinfo": "efg@gmail.com",
+        "Incidentstatus": "In-Progress",
+        "Priority": "medium",
+        "Category" :"security"
+    },
+    {
+        "IncidentNo": "INC003",
+        "Incidentdesc": "Clicked a link in a phishing mail",
+        "Title": "Phishing Mail",
+        "Contactinfo": "abcd@gmail.com",
+        "Incidentstatus": "Pending",
+        "Priority": "High",
+        "Category" :"Software"
+      },
+      {
+          "IncidentNo": "INC004",
+          "Incidentdesc": "Unable to update to most current version",
+          "Title": "Latest Antivirus App",
+          "Contactinfo": "efg@gmail.com",
+          "Incidentstatus": "Opened",
+          "Priority": "Low",
+          "Category" :"Software"
+      },
+      {
+        "IncidentNo": "INC005",
+        "Incidentdesc": "Virus alert after installing latest updates",
+        "Title": "Virus Alert",
+        "Contactinfo": "abcd@gmail.com",
+        "Incidentstatus": "New",
+        "Priority": "High",
+        "Category" :"Software"
+      },
+      {
+          "IncidentNo": "INC006",
+          "Incidentdesc": "I am not able to access corporate network via",
+          "Title": "VPN access not working",
+          "Contactinfo": "efg@gmail.com",
+          "Incidentstatus": "New",
+          "Priority": "medium",
+          "Category" :"Software"
+      },
+      {
+          "IncidentNo": "INC007",
+          "Incidentdesc": "Plugged it to my workstation to see what it contains",
+          "Title": "USB stick found",
+          "Contactinfo": "abcd@gmail.com",
+          "Incidentstatus": "Pending",
+          "Priority": "Medium",
+          "Category" :"Software"
+        },
+        {
+            "IncidentNo": "INC008",
+            "Incidentdesc": "Laptop Screen Broken",
+            "Title": "Laptop Screen Cracked",
+            "Contactinfo": "efg@gmail.com",
+            "Incidentstatus": "Closed",
+            "Category" :"Hardware"
+        }
+]
+}

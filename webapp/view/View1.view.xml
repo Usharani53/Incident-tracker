@@ -1,0 +1,66 @@
+<mvc:View controllerName="incidentman.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core">
+    
+    <Page id="page" title="{i18n>title}" enableScrolling="true" class="sapUiContentPadding">
+
+
+       <Panel id="_IDGenPanel1" headerText="HOME" expandable="true"  width="auto" class="sapUiResponsiveMargin">
+       <Button id="_IDGenButton1" text="Raise an incident" press="onPress" class="mybutton"></Button>
+       <Button ></Button>
+       </Panel>
+       <Panel expandable="true"  headerText="Raised Incidents" width="auto" class="sapUiResponsiveMargin">
+        <content>
+        <Table id="abc" items="{path:'/IncidentCollection'}" class="mytable" inset="true" >
+        <headerToolbar>
+           <Toolbar>
+                  <Label id="tableHeader" text="My Incidents" design="Bold" />
+                   <ToolbarSpacer/>
+            <SearchField 
+               width="50%" 
+               search="filterGlobally"/>
+               </Toolbar>
+        </headerToolbar>
+        <columns>
+             <Column minScreenWidth="Tablet" demandPopin="true">
+              <header>
+                 <Label text="Incident Number"></Label>
+               </header>  
+             </Column>
+             <Column minScreenWidth="Tablet">
+                 <Text text="Incident description"></Text>
+             </Column>
+             <Column minScreenWidth="Tablet" hAlign="Begin">
+                 <Text text="Titile"></Text>
+             </Column>
+             <Column minScreenWidth="Tablet" demandPopin="true">
+                 <Text text="Contact info"></Text>
+             </Column>
+             <Column minScreenWidth="Tablet">
+                 <Text text="Incident Status"></Text>
+             </Column>
+             <Column minScreenWidth="Tablet">
+                 <Text text="Priority"></Text>
+             </Column>
+             <Column minScreenWidth="Tablet">
+                 <Text text="Category"></Text>
+             </Column>
+        </columns>
+        <items>
+          <ColumnListItem vAlign="Middle" press="tableSelected">
+            <cells>
+                  <Text text="{IncidentNo}"></Text>
+                  <Text text="{Incidentdesc}"></Text>
+                  <Text text="{Title}"></Text>
+                  <Text text="{Contactinfo}"></Text>
+                  <Text text="{Incidentstatus}"></Text>
+                  <Text text="{Priority}"></Text>
+                  <Text text="{Category}"></Text>
+            </cells>
+          </ColumnListItem>
+        </items>
+    </Table>
+     </content>
+     </Panel>
+ </Page>
+</mvc:View>
